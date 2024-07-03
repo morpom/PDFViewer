@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="ReportPreview">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 85224655 - Field 536053543 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The maximum number of lines a report can have to be automatically previewed. If the number of lines exceeds this value, the report is not automatically previewed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfLinesForAutoPreview - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 536053543 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Number of Lines for Auto Preview</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfLinesForAutoPreview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 3441547458 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The maximum number of temporarily saved reports. If the number of saved reports exceeds this value, the oldest reports are deleted.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfSavedReports - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 3441547458 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Number of Saved Reports</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfSavedReports - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 2333076789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PrimaryKey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field PrimaryKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 1471880820 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If this field is checked, the report preview is active.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field ReportPreviewActive - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 1471880820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Preview Active</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field ReportPreviewActive - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1127388043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Viewer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Viewer Doc Attachment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 868043381 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Preview Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Report Preview Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 868043381 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Report Preview Setup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 94552535 - Action 585404639 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 219593816">
+          <source>View PDF</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension MOP Document Attachment Detail - Action MOP View PDF - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 94552535 - Action 585404639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 219593816">
+          <source>View PDF</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension MOP Document Attachment Detail - Action MOP View PDF - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 412578493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Preview Permission Set</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet RP Permission Set - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

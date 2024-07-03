@@ -1,0 +1,32 @@
+{
+  "id": "1820fe2c-d073-4084-9462-655c1bba6fb1",
+  "name": "PDFPreview",
+  "publisher": "Moritz Pommer",
+  "version": "1.0.0.0",  
+  "platform": "24.0.0.0",
+  "application": "24.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "TranslationFile"
+  ]
+}

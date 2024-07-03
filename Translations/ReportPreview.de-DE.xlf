@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de-DE" original="ReportPreview">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 4030729877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Storage</source>
+          <target>PDF Speicher</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PDF Storage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4030729877 - NamedType 1264698394" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download PDF File</source>
+          <target>PDF-Datei herunterladen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PDF Storage - NamedType DownloadTitleLbl</note>
+        </trans-unit>
+        <trans-unit id="Table 4030729877 - NamedType 1254356211" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload PDF File</source>
+          <target>PDF-Datei hochladen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PDF Storage - NamedType UploadTitleLbl</note>
+        </trans-unit>
+        <trans-unit id="Table 4030729877 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beschreibung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PDF Storage - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4030729877 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PDF Storage - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4030729877 - Field 3341904219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PDF Storage - Field PDF Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4030729877 - Field 2649378047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Record ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PDF Storage - Field Source Record ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 536053543 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The maximum number of lines a report can have to be automatically previewed. If the number of lines exceeds this value, the report is not automatically previewed.</source>
+          <target>Die maximale Anzahl von Zeilen, die ein Bericht haben kann, um automatisch angezeigt zu werden. Wenn die Anzahl der Zeilen diesen Wert überschreitet, wird der Bericht nicht automatisch angezeigt.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfLinesForAutoPreview - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 536053543 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Number of Lines for Auto Preview</source>
+          <target>Max. Anzahl von Zeilen für die automatische Vorschau</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfLinesForAutoPreview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 3441547458 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The maximum number of temporarily saved reports. If the number of saved reports exceeds this value, the oldest reports are deleted.</source>
+          <target>Die maximale Anzahl von temporär gespeicherten Berichten. Wenn die Anzahl der gespeicherten Berichte diesen Wert überschreitet, werden die ältesten Berichte gelöscht.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfSavedReports - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 3441547458 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Number of Saved Reports</source>
+          <target>Max. Anzahl von gespeicherten Berichten</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field MaxNumberOfSavedReports - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 2333076789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PrimaryKey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field PrimaryKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 1471880820 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If this field is checked, the report preview is active.</source>
+          <target>Aktiviert die automatische Berichtsvorschau in der Factbox.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field ReportPreviewActive - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 85224655 - Field 1471880820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Preview Active</source>
+          <target>Berichtsvorschau aktiv</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Report Preview Setup Table - Field ReportPreviewActive - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1912860318 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Viewer</source>
+          <target>PDF-Anzeige</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page MOP MOPViewerDocAttachament - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4030729877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Storage</source>
+          <target>PDF Speicher</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Storage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4030729877 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field</source>
+          <target>Legt den Wert des Beschreibungsfelds fest</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Storage - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4030729877 - Control 2104528215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View</source>
+          <target>Anzeigen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Storage - Control MOPViewerFactbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4030729877 - Action 3053757551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download</source>
+          <target>Herunterladen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Storage - Action DownloadContent - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4030729877 - Action 3053757551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download</source>
+          <target>Herunterladen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Storage - Action DownloadContent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4030729877 - Action 4047584486 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload</source>
+          <target>Hochladen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Storage - Action UploadContent - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4030729877 - Action 4047584486 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload</source>
+          <target>Hochladen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Storage - Action UploadContent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1108314396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Viewer</source>
+          <target>PDF-Anzeige</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Viewer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1467481551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Viewer</source>
+          <target>PDF-Anzeige</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Viewer Factbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1467481551 - Action 517879589 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View</source>
+          <target>Anzeigen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Viewer Factbox - Action MOPViewFullDocument - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1467481551 - Action 517879589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View</source>
+          <target>Anzeigen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Viewer Factbox - Action MOPViewFullDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2567002853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Documents</source>
+          <target>PDF-Dokumente</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PDF Viewer Matrix - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 868043381 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Preview Setup</source>
+          <target>Berichtsvorschau Einrichtung</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Report Preview Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1517553779 - Action 585404639 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 219593816">
+          <source>View PDF</source>
+          <target>PDF anzeigen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension MOP Document Attachment Detai - Action MOP View PDF - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1517553779 - Action 585404639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 219593816">
+          <source>View PDF</source>
+          <target>PDF anzeigen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension MOP Document Attachment Detai - Action MOP View PDF - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 868043381 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target>Allgemein</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Report Preview Setup - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1638660916 - Control 1509129173 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Report Preview</source>
+          <target>Berichtsvorschau</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PostSalCredMem List Extension - Control PDFViewerMatrix - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

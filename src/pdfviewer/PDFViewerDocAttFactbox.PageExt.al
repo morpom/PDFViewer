@@ -27,6 +27,7 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
         InStreamVar: InStream;
         OutStreamVar: OutStream;
         PDFAsTxt: Text;
+        DocumentAttachment: Record "Document Attachment";
     begin
         CurrPage.PDFViewer.SetVisible(Rec."Document Reference ID".HasValue());
         if not Rec."Document Reference ID".HasValue then
@@ -34,7 +35,11 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
 
         TempBlob.CreateInStream(InStreamVar);
         TempBlob.CreateOutStream(OutStreamVar);
-        Rec."Document Reference ID".ExportStream(OutStreamVar);
+
+        DocumentAttachment.Reset();
+        DocumentAttachment.SetRange("No.", Rec."No.");
+        DocumentAttachment.FindLast();
+        DocumentAttachment."Document Reference ID".ExportStream(OutStreamVar);
 
         PDFAsTxt := Base64Convert.ToBase64(InStreamVar);
 

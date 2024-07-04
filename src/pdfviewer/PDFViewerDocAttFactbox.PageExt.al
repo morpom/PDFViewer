@@ -49,11 +49,17 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
     local procedure RunFullView()
     var
         PDFViewerDocumentAttachment: Page "PDF Viewer Document Attachment";
+        DocumentAttachment: Record "Document Attachment";
     begin
         if Rec.IsEmpty() then
             exit;
-        PDFViewerDocumentAttachment.SetRecord(Rec);
-        PDFViewerDocumentAttachment.SetTableView(Rec);
+
+        DocumentAttachment.Reset();
+        DocumentAttachment.SetRange("No.", Rec."No.");
+        DocumentAttachment.FindLast();
+
+        PDFViewerDocumentAttachment.SetRecord(DocumentAttachment);
+        PDFViewerDocumentAttachment.SetTableView(DocumentAttachment);
         PDFViewerDocumentAttachment.Run();
     end;
 

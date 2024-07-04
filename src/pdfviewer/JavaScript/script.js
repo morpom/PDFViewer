@@ -34,12 +34,19 @@ function LoadPDF(PDFDocument,IsFactbox){
 
     PDFDocument = atob(PDFDocument);
 
+    // if (pdfDoc.numPages < 1) {
+    //     document.querySelector("#next").style.display = 'none';
+    //     document.querySelector("#prev").style.display = 'none';
+    // }
+
     if (IsFactbox) {
         if (factboxarea.className = "ms-nav-layout-factbox-content-area ms-nav-scrollable"){
             factboxarea.style.paddingLeft = "5px";
             factboxarea.style.paddingRight = "0px";
             factboxarea.style.overflowY = "scroll";
         }
+        document.querySelector("#next").style.display = 'none';
+        document.querySelector("#prev").style.display = 'none';
         scale = 0.6;
         }else{
             document.querySelector("#pdf-view").style.display = 'none';

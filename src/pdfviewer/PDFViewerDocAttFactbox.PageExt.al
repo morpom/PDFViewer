@@ -12,6 +12,11 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
                 begin
                     SetPDFDocument();
                 end;
+
+                trigger onView()
+                begin
+                    RunFullView();
+                end;
             }
         }
     }
@@ -33,7 +38,18 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
 
         PDFAsTxt := Base64Convert.ToBase64(InStreamVar);
 
-        CurrPage.PDFViewer.LoadPDF(PDFAsTxt, false);
+        CurrPage.PDFViewer.LoadPDF(PDFAsTxt, true);
+    end;
+
+    local procedure RunFullView()
+    var
+        PDFViewerDocumentAttachment: Page "PDF Viewer Document Attachment";
+    begin
+        if Rec.IsEmpty() then
+            exit;
+        PDFViewerDocumentAttachment.SetRecord(Rec);
+        PDFViewerDocumentAttachment.SetTableView(Rec);
+        PDFViewerDocumentAttachment.Run();
     end;
 
     procedure SetRecord(DocumentAttachment: Record "Document Attachment")
@@ -56,6 +72,8 @@ codeunit 50100 PDFViewerDocAttFactboxCodeunit
     var
         PDFViewerDocAttFactboxExt: Page "Document Attachment Factbox";
     begin
-        PDFViewerDocAttFactboxExt.SetRecord(DocumentAttachment);
+        // PDFViewerDocAttFactboxExt.Update(true);
+        // PDFViewerDocAttFactboxExt.SetRecord(DocumentAttachment);
+        // PDFViewerDocAttFactboxExt.SetVisible(DocumentAttachment."Document Reference ID".HasValue);
     end;
 }

@@ -23,7 +23,7 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
         OutStreamVar: OutStream;
         PDFAsTxt: Text;
     begin
-        CurrPage.PDFViewer.SetVisible(Rec."Document Reference ID".HasValue()); //TODO The HasValue läuft hier auf einen Fehler
+        CurrPage.PDFViewer.SetVisible(Rec."Document Reference ID".HasValue());
         if not Rec."Document Reference ID".HasValue then
             exit;
 
@@ -45,10 +45,17 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
 
     trigger OnAfterGetRecord()
     begin
-        if Rec.IsEmpty() then begin
-            CurrPage.PDFViewer.SetVisible(Rec."Document Reference ID".HasValue());
-            Message('No Record');
-        end else
+        if not Rec.IsEmpty() then
             SetRecord(Rec);
+    end;
+}
+codeunit 50100 PDFViewerDocAttFactboxCodeunit
+{
+    [EventSubscriber(ObjectType::Page, Page::"Document Attachment Factbox", 'OnBeforeOnAfterGetCurrRecord', '', false, false)]
+    local procedure OnBeforeOnAfterGetCurrRecord(var DocumentAttachment: Record "Document Attachment"; var AttachmentCount: Integer; var IsHandled: Boolean)
+    var
+        PDFViewerDocAttFactboxExt: Page "Document Attachment Factbox";
+    begin
+        PDFViewerDocAttFactboxExt.SetRecord(DocumentAttachment);
     end;
 }

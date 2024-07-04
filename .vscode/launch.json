@@ -15,7 +15,7 @@
             "enableSqlInformationDebugger": true,
             "tenant": "default",
             "usePublicURLFromServer": true,
-            "startupObjectId": 5052
+            "startupObjectId": 143
         },
         {
             "name": "attach knkMedia docker",

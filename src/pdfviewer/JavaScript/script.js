@@ -4,9 +4,9 @@ var pdfDoc = null,
     pageNumPending = null,
     IsFirstLoad = true;
 
-function InitializeControl(controlId) {
+function InitializeControl(controlId, [View, Previous, Next]) {
     var controlAddIn = document.getElementById(controlId);
-    controlAddIn.innerHTML ='<div id="pdf-contents"><div id="pdf-meta"><div id="pdf-buttons"><button id="prev">Previous</button><button id="next">Next</button><button id="pdf-view">View</button></div><span id="page-count-container">Page: <span id="page_num"></span> / <span id="page_count"></span></span></div><canvas id="the-canvas"></canvas></div>';
+    controlAddIn.innerHTML ='<div id="pdf-contents"><div id="pdf-meta"><div id="pdf-buttons"><button id="prev">' + Previous + '</button><button id="next">' + Next + '</button><button id="pdf-view">' + View + '</button></div><span id="page-count-container">Page: <span id="page_num"></span> / <span id="page_count"></span></span></div><canvas id="the-canvas"></canvas></div>';
 }
 
 function SetVisible(IsVisible) {
@@ -34,12 +34,19 @@ function LoadPDF(PDFDocument,IsFactbox){
 
     PDFDocument = atob(PDFDocument);
 
+    // if (pdfDoc.numPages < 1) {
+    //     document.querySelector("#next").style.display = 'none';
+    //     document.querySelector("#prev").style.display = 'none';
+    // }
+
     if (IsFactbox) {
         if (factboxarea.className = "ms-nav-layout-factbox-content-area ms-nav-scrollable"){
             factboxarea.style.paddingLeft = "5px";
             factboxarea.style.paddingRight = "0px";
             factboxarea.style.overflowY = "scroll";
         }
+        document.querySelector("#next").style.display = 'none';
+        document.querySelector("#prev").style.display = 'none';
         scale = 0.6;
         }else{
             document.querySelector("#pdf-view").style.display = 'none';

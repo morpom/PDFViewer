@@ -7,10 +7,14 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
             usercontrol(PDFViewer; "PDF Viewer")
             {
                 ApplicationArea = All;
-
                 trigger ControlAddinReady()
                 begin
                     SetPDFDocument();
+                end;
+
+                trigger onView()
+                begin
+                    RunFullView();
                 end;
             }
         }
@@ -22,18 +26,40 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
         InStreamVar: InStream;
         OutStreamVar: OutStream;
         PDFAsTxt: Text;
+        DocumentAttachment: Record "Document Attachment";
     begin
-        CurrPage.PDFViewer.SetVisible(Rec."Document Reference ID".HasValue()); //TODO The HasValue läuft hier auf einen Fehler
+        CurrPage.PDFViewer.SetVisible(Rec."Document Reference ID".HasValue());
         if not Rec."Document Reference ID".HasValue then
             exit;
 
         TempBlob.CreateInStream(InStreamVar);
         TempBlob.CreateOutStream(OutStreamVar);
-        Rec."Document Reference ID".ExportStream(OutStreamVar);
+
+        DocumentAttachment.Reset();
+        DocumentAttachment.SetRange("No.", Rec."No.");
+        DocumentAttachment.FindLast();
+        DocumentAttachment."Document Reference ID".ExportStream(OutStreamVar);
 
         PDFAsTxt := Base64Convert.ToBase64(InStreamVar);
 
-        CurrPage.PDFViewer.LoadPDF(PDFAsTxt, false);
+        CurrPage.PDFViewer.LoadPDF(PDFAsTxt, true);
+    end;
+
+    local procedure RunFullView()
+    var
+        PDFViewerDocumentAttachment: Page "PDF Viewer Document Attachment";
+        DocumentAttachment: Record "Document Attachment";
+    begin
+        if Rec.IsEmpty() then
+            exit;
+
+        DocumentAttachment.Reset();
+        DocumentAttachment.SetRange("No.", Rec."No.");
+        DocumentAttachment.FindLast();
+
+        PDFViewerDocumentAttachment.SetRecord(DocumentAttachment);
+        PDFViewerDocumentAttachment.SetTableView(DocumentAttachment);
+        PDFViewerDocumentAttachment.Run();
     end;
 
     procedure SetRecord(DocumentAttachment: Record "Document Attachment")
@@ -45,10 +71,21 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
 
     trigger OnAfterGetRecord()
     begin
-        if Rec.IsEmpty() then begin
-            CurrPage.PDFViewer.SetVisible(Rec."Document Reference ID".HasValue());
-            Message('No Record');
-        end else
+        if not Rec.IsEmpty() then
             SetRecord(Rec);
+    end;
+}
+codeunit 50100 PDFViewerDocAttFactboxCodeunit
+{
+    [EventSubscriber(ObjectType::Page, Page::"Document Attachment Factbox", 'OnBeforeOnAfterGetCurrRecord', '', false, false)]
+    local procedure OnBeforeOnAfterGetCurrRecord(var DocumentAttachment: Record "Document Attachment"; var AttachmentCount: Integer; var IsHandled: Boolean)
+    var
+    // PDFViewerDocAttFactbox: Page "Document Attachment Factbox";
+    //PDFViewer: ControlAddIn "PDF Viewer";
+    begin
+        // PDFViewerDocAttFactbox.PDFViewer.SetVisible(DocumentAttachment."Document Reference ID".HasValue);
+        // PDFViewerDocAttFactboxExt.Update(true);
+        // PDFViewerDocAttFactboxExt.SetRecord(DocumentAttachment);
+        // PDFViewerDocAttFactboxExt.SetVisible(DocumentAttachment."Document Reference ID".HasValue);
     end;
 }

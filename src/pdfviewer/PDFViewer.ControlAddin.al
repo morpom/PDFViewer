@@ -1,7 +1,7 @@
 controladdin "PDF Viewer"
 {
     Scripts = 'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.min.js', 'src/pdfviewer/JavaScript/script.js';
-    StartupScript = 'src/pdfviewer/JavaScript/Startup.js';
+    StartupScript = 'src/pdfviewer/JavaScript/StartupENU.js';
     StyleSheets = 'src/pdfviewer/JavaScript/stylesheet.css';
 
     MinimumHeight = 1;

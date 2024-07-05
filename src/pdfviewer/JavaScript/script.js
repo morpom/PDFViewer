@@ -4,9 +4,9 @@ var pdfDoc = null,
     pageNumPending = null,
     IsFirstLoad = true;
 
-function InitializeControl(controlId) {
+function InitializeControl(controlId, [View, Previous, Next]) {
     var controlAddIn = document.getElementById(controlId);
-    controlAddIn.innerHTML ='<div id="pdf-contents"><div id="pdf-meta"><div id="pdf-buttons"><button id="prev">Previous</button><button id="next">Next</button><button id="pdf-view">View</button></div><span id="page-count-container">Page: <span id="page_num"></span> / <span id="page_count"></span></span></div><canvas id="the-canvas"></canvas></div>';
+    controlAddIn.innerHTML ='<div id="pdf-contents"><div id="pdf-meta"><div id="pdf-buttons"><button id="prev">' + Previous + '</button><button id="next">' + Next + '</button><button id="pdf-view">' + View + '</button></div><span id="page-count-container">Page: <span id="page_num"></span> / <span id="page_count"></span></span></div><canvas id="the-canvas"></canvas></div>';
 }
 
 function SetVisible(IsVisible) {

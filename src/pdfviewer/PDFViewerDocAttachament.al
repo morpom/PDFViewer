@@ -15,7 +15,6 @@ page 50106 "PDF Viewer Document Attachment"
                 usercontrol(PDFViewer; "PDF Viewer")
                 {
                     ApplicationArea = All;
-
                     trigger ControlAddinReady()
                     begin
                         SetPDFDocument();

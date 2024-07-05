@@ -7,7 +7,6 @@ pageextension 50101 "Doc Attachment Factbox Ext" extends "Document Attachment Fa
             usercontrol(PDFViewer; "PDF Viewer")
             {
                 ApplicationArea = All;
-
                 trigger ControlAddinReady()
                 begin
                     SetPDFDocument();
@@ -81,8 +80,10 @@ codeunit 50100 PDFViewerDocAttFactboxCodeunit
     [EventSubscriber(ObjectType::Page, Page::"Document Attachment Factbox", 'OnBeforeOnAfterGetCurrRecord', '', false, false)]
     local procedure OnBeforeOnAfterGetCurrRecord(var DocumentAttachment: Record "Document Attachment"; var AttachmentCount: Integer; var IsHandled: Boolean)
     var
-        PDFViewerDocAttFactboxExt: Page "Document Attachment Factbox";
+    // PDFViewerDocAttFactbox: Page "Document Attachment Factbox";
+    //PDFViewer: ControlAddIn "PDF Viewer";
     begin
+        // PDFViewerDocAttFactbox.PDFViewer.SetVisible(DocumentAttachment."Document Reference ID".HasValue);
         // PDFViewerDocAttFactboxExt.Update(true);
         // PDFViewerDocAttFactboxExt.SetRecord(DocumentAttachment);
         // PDFViewerDocAttFactboxExt.SetVisible(DocumentAttachment."Document Reference ID".HasValue);
